@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #665749;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #3c342b;
+    width: 100%;
+}
+
+li {
+    float: right;
+}
+
+#navTitle {
+    float: left;
+}
+
+li a {
+    display: block;
+    font-size: 20px;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: darkslategray;
+}
+
+/* x=656 is a good number for float menu */
+
+@media only screen and (min-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5%;
+    }
+}
+
+main {
+    margin: 40px;
+}
+
+section {
+    text-align: left;
+}
