@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meet the Arsenal</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
     <!-- Skapad av Marcus 07/05-2024-->
     <!-- Glöm inte documentera, validering, olika webbläsare och plattformar, registrering, semantisk, olika upplösning av bilder, alt, tabell, färgblinda, anpassa till dator, mobil och surfplatta skärm (flerspaltig layout), följa bra färger-->
 </head>
@@ -12,41 +14,55 @@
     <nav>
         <ul>
             <li class="navLeft"><a href="index.html">A Wizard's Glory</a></li>
-            <li><a href="login.html">Log in</a></li>
-            <li><a href="support.html">Support</a></li>
-            <li><a href="websites.html">Other websites</a></li>
-            <li><a href="assets.html">Assets used</a></li>
-            <li><a href="characters.html">Meet the Contestants</a></li>
-            <li id="active"><a href="arsenal.html">Meet the Arsenal</a></li>
-            <li><a href="guide.html">Guide</a></li>
-            <li><a href="download.html">Download Game</a></li>
+            <li id="navDropdown"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a></li>
+            <div id="navDropdownContent">
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="websites.html">Other websites</a></li>
+                <li><a href="tutorials.html">Tutorials used</a></li>
+                <li><a href="assets.html">Assets used</a></li>
+                <li><a href="characters.html">Meet the Contestants</a></li>
+                <li id="active"><a href="arsenal.html">Meet the Arsenal</a></li>
+                <li><a href="guide.html">Guide</a></li>
+                <li><a href="download.html">Download Game</a></li>
+            </div>
         </ul>
     </nav>
     <header>
         <h1>Meet the Arsenal</h1>
         <p>To survive in the arena you need to effectively use the variety of spells. Every spell has a different range, speed, damage and recasting speed so learning how to use every spell is important.</p>
     </header>
-    <main>
+    <main id="threeColumns">
         <section>
             <h3>The Damage Spell</h3>
             <p>The all around spell every other spell branches off of. It's good range, speed, damage and recasting speed makes it a reliable choice for beginners and experts.</p>
+            <img src="damagespell.jpg" alt="Image of Hjöran holding a damage spell">
         </section>
         <section>
             <h3>The Continuous Spell</h3>
             <p>Faster recasting speed but lower damage, good to use to consistently shoot out damage.</p>
+            <img src="continuousspell.jpg" alt="Image of Hjöran holding a continuous spell">
         </section>
         <section>
             <h3>The Area of Effect Spell</h3>
             <p>Higher damage and spread but shorter range and longer recasting speed makes it a great choice when death stares you in the eye.</p>
+            <img src="aoespell.jpg" alt="Image of Hjöran holding an area of effect spell">
         </section>
         <section>
             <h3>The Long Range Spell</h3>
             <p>Higher damage and speed but longer recasting speed makes it a great damage dealer from far away if you can hit your spells.</p>
+            <img src="longrangespell.jpg" alt="Image of Hjöran holding a long range spell">
         </section>
         <section>
             <h3>The Explosive Spell</h3>
             <p>A high damage dealing monster that produces a force that shoots around both you and your enemies. Great way to both jump out and into the fight.</p>
+            <img src="explosivespell.jpg" alt="Image of Hjöran holding a long range spell">
         </section>
     </main>
+    <footer>
+        <a href="https://ntigymnasiet.se/" target="_blank"><img src="https://ntigymnasiet.se/wp-content/uploads/2023/02/logotype-vit.svg" alt="Logo of NTI gymnasium" id="nti"></a>
+    </footer>
 </body>
 </html>

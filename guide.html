@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player Guide</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
     <!-- Skapad av Marcus 07/05-2024-->
     <!-- Glöm inte documentera, validering, olika webbläsare och plattformar, registrering, semantisk, olika upplösning av bilder, alt, tabell, färgblinda, anpassa till dator, mobil och surfplatta skärm (flerspaltig layout), följa bra färger-->
 </head>
@@ -12,14 +14,20 @@
     <nav>
         <ul>
             <li class="navLeft"><a href="index.html">A Wizard's Glory</a></li>
-            <li><a href="login.html">Log in</a></li>
-            <li><a href="support.html">Support</a></li>
-            <li><a href="websites.html">Other websites</a></li>
-            <li><a href="assets.html">Assets used</a></li>
-            <li><a href="characters.html">Meet the Contestants</a></li>
-            <li><a href="arsenal.html">Meet the Arsenal</a></li>
-            <li id="active"><a href="guide.html">Guide</a></li>
-            <li><a href="download.html">Download Game</a></li>
+            <li id="navDropdown"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a></li>
+            <div id="navDropdownContent">
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="websites.html">Other websites</a></li>
+                <li><a href="tutorials.html">Tutorials used</a></li>
+                <li><a href="assets.html">Assets used</a></li>
+                <li><a href="characters.html">Meet the Contestants</a></li>
+                <li><a href="arsenal.html">Meet the Arsenal</a></li>
+                <li id="active"><a href="guide.html">Guide</a></li>
+                <li><a href="download.html">Download Game</a></li>
+            </div>
         </ul>
     </nav>
     <header>
@@ -28,19 +36,24 @@
     <main>
         <section>
             <h2>Title Screen</h2>
-            <p>When starting the game you'll be presented with a Play button, a Endless toggle and a quit button.</p> 
+            <p>When starting the game you'll be presented with a Play button, a Endless toggle and a quit button.</p>
+            <figure>
+                <img src="titlescreen.jpg" alt="Picture of the titlescreen">
+            </figure>
             <aside>
                 <h3>Normal Mode</h3>
-                <p>The normal mode can be played by untoggling the endless toggle and pressing play. It provides a set amount of rounds that are handcrafted with difficulty escalation in mind with a win condition after you've completed all the rounds.</p>
+                <p>The Normal Mode can be played by untoggling the Endless toggle and pressing Play. It provides a set amount of rounds that are handcrafted with difficulty escalation in mind with a win condition after you've completed all the rounds.</p>
             </aside>
             <aside>
                 <h3>Endless Mode</h3>
-                <p>The endless mode can be played by toggling the endless toggle and pressing play. It randomizes enemies spawns and spawns them faster and faster until you die where you'll get a high score.</p>
+                <p>The Endless Mode can be played by toggling the Endless toggle and pressing Play. It randomizes enemies spawns and spawns them faster and faster until you die where you'll get a high score.</p>
+                <img src="endlessdied.jpg" alt="A screenshot of game over screen in endless mode"> 
             </aside>
         </section>
         <section>
             <h2>Player Controls</h2>
             <p>Once you've pressed play and watched the cutscene you'll be put into Opela arena with enemies spawning that are trying to kill you. You need to use your movement and spell casting skills to survive.</p>
+            <img src="playingscreenshot.jpg" alt="A screenshot inside the game">
             <aside>
                 <h3>Movement</h3>
                 <p>Use WASD to move around and the mouse to look around. You can also jump with rockets to flee from enemies.</p>
@@ -49,8 +62,12 @@
                 <h3>Shooting</h3>
                 <p>To actually win the game you need to kill enemies. Toggle the spells by pressing the number keys and you should see a spell appearing around your character. Press the left mouse button to fire off the spell.</p>
                 <p>Tip: Every spell recasts in the background. So switching spells is an effective way to maximize damage.</p>
+                <img src="castingscreenshot.jpg" alt="A screenshot of the player casting a spell">
             </aside>
         </section>
     </main>
+    <footer>
+        <a href="https://ntigymnasiet.se/" target="_blank"><img src="https://ntigymnasiet.se/wp-content/uploads/2023/02/logotype-vit.svg" alt="Logo of NTI gymnasium" id="nti"></a>
+    </footer>
 </body>
 </html>

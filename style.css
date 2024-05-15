@@ -7,7 +7,7 @@ body, html {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-ul {
+nav ul {
     list-style-type: none;
     overflow: hidden;
     margin: 0;
@@ -16,7 +16,7 @@ ul {
     width: 100%;
 }
 
-li {
+nav li {
     float: right;
 }
 
@@ -24,7 +24,7 @@ li {
     float: left;
 }
 
-li a {
+nav li a {
     display: block;
     font-size: 20px;
     padding: 15px;
@@ -32,7 +32,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+nav li a:hover {
     background-color: #2d2720;
 }
 
@@ -40,16 +40,27 @@ li a:hover {
     background-color: #736737;
 }
 
-/* x=656 is a good number for float menu */
+#navDropdownContent
+{
+    display: block;
+}
 
-@media only screen and (min-width: 800px) {
-    main {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 5%;
+#navDropdown {
+    display: none;
+}
+
+@media only screen and (max-width: 656px) {
+    nav li {
+        float: none;
     }
-    .threeColumns {
-        grid-template-columns: auto auto auto;
+    #navDropdownContent
+    {
+        display: none;
+    }
+    #navDropdown
+    {
+        display: block;
+        float: right;
     }
 }
 
@@ -57,14 +68,56 @@ main {
     margin: 40px;
 }
 
+@media only screen and (min-width: 800px) {
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 5%;
+        align-items: center;
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+    #threeColumns {
+        grid-template-columns: auto auto auto;
+    }
+}
+
 section {
     text-align: left;
 }
 
 section p {
+    max-width: 500px;
     margin: 10px
 }
 
 a {
     color: #dacdbf;;
+}
+
+figure {
+    margin: 0;
+}
+
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 95%;
+    margin: 10px;
+    max-width: 800px;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    margin: 20px;
+}
+
+#nti {
+    height: 100px;
+}
+
+#index-weirdness {
+    margin-top: 10%;
 }

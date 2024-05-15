@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meet the Characters</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
     <!-- Skapad av Marcus 07/05-2024-->
     <!-- Glöm inte documentera, validering, olika webbläsare och plattformar, registrering, semantisk, olika upplösning av bilder, alt, tabell, färgblinda, anpassa till dator, mobil och surfplatta skärm (flerspaltig layout), följa bra färger-->
 </head>
@@ -12,14 +14,20 @@
     <nav>
         <ul>
             <li class="navLeft"><a href="index.html">A Wizard's Glory</a></li>
-            <li><a href="login.html">Log in</a></li>
-            <li><a href="support.html">Support</a></li>
-            <li><a href="websites.html">Other websites</a></li>
-            <li><a href="assets.html">Assets used</a></li>
-            <li id="active"><a href="characters.html">Meet the Contestants</a></li>
-            <li><a href="arsenal.html">Meet the Arsenal</a></li>
-            <li><a href="guide.html">Guide</a></li>
-            <li><a href="download.html">Download Game</a></li>
+            <li id="navDropdown"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a></li>
+            <div id="navDropdownContent">
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="websites.html">Other websites</a></li>
+                <li><a href="tutorials.html">Tutorials used</a></li>
+                <li><a href="assets.html">Assets used</a></li>
+                <li id="active"><a href="characters.html">Meet the Contestants</a></li>
+                <li><a href="arsenal.html">Meet the Arsenal</a></li>
+                <li><a href="guide.html">Guide</a></li>
+                <li><a href="download.html">Download Game</a></li>
+            </div>
         </ul>
     </nav>
     <header>
@@ -29,15 +37,21 @@
         <section>
             <h2>The Normal Enemy</h2>
             <p>These creatures are found in mass in Opela Arena trying to overwhelm the opponent. With their quick speeds and attacks it's important to keep a safe distance from you and their arms.</p>
+            <img src="normalenemy.jpg" alt="Image of the normal enemy">
         </section>
         <section>
             <h2>The Giant Enemy</h2>
             <p>Coming from being alpha predators in their home planet these behemoths can deal massive damage from a larger range but thanks to their mass are walking very slowly. Even though they could seem clumpsy with their chilled personality you don't want to meet them face to face, so keep dealing damage to them from a distance until they're gone.</p>
+            <img src="giantenemy.jpg" alt="Image of the giant enemy">
         </section>
         <section>
             <h2>The Ranged Enemy</h2>
             <p>With their small and quick capabilities these archers have very defensive playstyle which combined with their bow and arrows make them very difficult to track down. Use your spells to block their shots while you quickly close the distance to deal a more damaging blow.</p>
+            <img src="rangedenemy.jpg" alt="Image of the ranged enemy">
         </section>
     </main>
+    <footer>
+        <a href="https://ntigymnasiet.se/" target="_blank"><img src="https://ntigymnasiet.se/wp-content/uploads/2023/02/logotype-vit.svg" alt="Logo of NTI gymnasium" id="nti"></a>
+    </footer>
 </body>
 </html>
