@@ -48,6 +48,9 @@ li a:hover {
         grid-template-columns: auto auto;
         gap: 5%;
     }
+    .threeColumns {
+        grid-template-columns: auto auto auto;
+    }
 }
 
 main {
@@ -56,4 +59,12 @@ main {
 
 section {
     text-align: left;
+}
+
+section p {
+    margin: 10px
+}
+
+a {
+    color: #dacdbf;;
 }
