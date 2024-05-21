@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>High Score</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Skapad av Marcus 07/05-2024-->
@@ -17,8 +17,8 @@
                 <i class="fa fa-bars"></i>
             </a></li>
             <div id="navDropdownContent">
-                <li id="active"><a href="login.html">Log in</a></li>
-                <li><a href="highscore.html">Highscore</a></li>
+                <li><a href="login.html">Log in</a></li>
+                <li id="active"><a href="highscore.html">Highscore</a></li>
                 <li><a href="websites.html">Other websites</a></li>
                 <li><a href="tutorials.html">Tutorials used</a></li>
                 <li><a href="assets.html">Assets used</a></li>
@@ -30,27 +30,33 @@
         </ul>
     </nav>
     <header>
-        <h1>Login</h1>
+        <h1>Highscore</h1>
     </header>
-    <main>
-        <form id="loginForm">
-            <label for="e-mail" >Email Adress</label> <br>
-            <input type="email" id="email" name="email" placeholder="Email Adress" required> <br>
-
-            <label for="password">Password</label> <br>
-            <input type="password" id="password" name="password" minlength="12" placeholder="Password" required> <br>
-
-            <label for="confirm-password">Confirm Password</label> <br>
-            <input type="password" id="confirm-password" placeholder="Confirm Password" required> <br>
-
-            <input type="submit" id="submit">
-        </form>
-        <p id="loginResultText"></p>
-
-        <script src="script.js"></script>
+    <main id="highscore">
+        <table>
+            <tr>
+                <th>Player</th>
+                <th>Time Survived</th>
+                <th>Enemies Killed</th>
+                <th>Enemies Per Second</th>
+            </tr>
+            <tr>
+                <td>Marcus</td>
+                <td>20</td>
+                <td>5</td>
+                <td>2.97</td>
+            </tr>
+        </table>
+        <adress>
+            <h2>Contact me to get on the leaderboard</h2>
+            <a id="getEmail" href="" onclick="GetEmailOnClipboard()">marcus.sorberg@elev.ga.ntig.se</a>
+            <p id="textCopiedAlert"></p>
+        </adress>
     </main>
     <footer>
         <a href="https://ntigymnasiet.se/" target="_blank"><img src="https://ntigymnasiet.se/wp-content/uploads/2023/02/logotype-vit.svg" alt="Logo of NTI gymnasium" id="nti"></a>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

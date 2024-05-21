@@ -4,7 +4,10 @@ body, html {
     text-align: center;
     background-color: #665749;
     color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 nav ul {
@@ -49,13 +52,18 @@ nav li a:hover {
     display: none;
 }
 
-@media only screen and (max-width: 656px) {
+#navBreakrow {
+    display: block;
+}
+
+@media only screen and (max-width: 775px) {
     nav li {
         float: none;
     }
     #navDropdownContent
     {
         display: none;
+        overflow: hidden;
     }
     #navDropdown
     {
@@ -65,30 +73,14 @@ nav li a:hover {
 }
 
 main {
-    margin: 40px;
-}
-
-@media only screen and (min-width: 800px) {
-    main {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 5%;
-        align-items: center;
-        margin-left: 160px;
-        margin-right: 160px;
-    }
-    #threeColumns {
-        grid-template-columns: auto auto auto;
-    }
-}
-
-section {
-    text-align: left;
+    padding: 40px;
 }
 
 section p {
     max-width: 500px;
-    margin: 10px
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
@@ -101,9 +93,15 @@ figure {
 
 iframe {
     aspect-ratio: 16 / 9;
-    width: 95%;
-    margin: 10px;
+    min-width: 321px;
+    width: 80%;
+    padding-bottom: 40px;
     max-width: 800px;
+}
+
+main iframe {
+    min-width: 80px;
+    padding: 0px;
 }
 
 img {
@@ -112,12 +110,77 @@ img {
 
 footer {
     margin: 20px;
+    margin-top: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+    .gridlayout {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        box-sizing: border-box;
+        gap: 5%;
+        align-items: center;
+        padding-left: 160px;
+        padding-right: 160px;
+        margin-bottom: 10%;
+    }
+    .threeColumns {
+        grid-template-columns: 33% 33% 33%;
+    }
+    section {
+        text-align: left;
+    }
+    section p {
+        margin: 10px;
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+#highscore {
+    padding: 0;
+}
+
+table {
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+th, td {
+    background-color: #3c342b;
+    padding: 10px;
+}
+
+::placeholder {
+    color: white;
+}
+
+#loginForm input {
+    margin: 10px;
+    background: transparent;
+    color: white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1;
+    height: 30px;
+    width: 200px;
+}
+
+#loginForm input[type="submit"] {
+    width: 120px;
+    height: 50px;
+    background: #3c342b;
+    font-weight: bold;
+    border: 0;
 }
 
 #nti {
+    position: relative;
     height: 100px;
-}
-
-#index-weirdness {
-    margin-top: 10%;
+    bottom: 0;
 }
