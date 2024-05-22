@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="cc: http://creativecommons.org/ns# dct: http://purl.org/dc/terms/">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meet the Characters</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <!-- Skapad av Marcus 07/05-2024-->
     <!-- Glöm inte documentera, validering, olika webbläsare och plattformar, registrering, semantisk, olika upplösning av bilder, alt, tabell, färgblinda, anpassa till dator, mobil och surfplatta skärm (flerspaltig layout), följa bra färger-->
@@ -17,23 +20,21 @@
             <li id="navDropdown"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a></li>
-            <div id="navDropdownContent">
-                <li><a href="login.html">Log in</a></li>
-                <li><a href="highscore.html">Highscore</a></li>
-                <li><a href="websites.html">Other websites</a></li>
-                <li><a href="tutorials.html">Tutorials used</a></li>
-                <li><a href="assets.html">Assets used</a></li>
-                <li id="active"><a href="characters.html">Meet the Contestants</a></li>
-                <li><a href="arsenal.html">Meet the Arsenal</a></li>
-                <li><a href="guide.html">Guide</a></li>
-                <li><a href="download.html">Download Game</a></li>
-            </div>
+            <li class="navDropdownContent"><a href="login.html">Log in</a></li>
+            <li class="navDropdownContent"><a href="highscore.html">Highscore</a></li>
+            <li class="navDropdownContent"><a href="websites.html">Other websites</a></li>
+            <li class="navDropdownContent"><a href="tutorials.html">Tutorials used</a></li>
+            <li class="navDropdownContent"><a href="assets.html">Assets used</a></li>
+            <li id="active" class="navDropdownContent"><a href="characters.html">Meet the Contestants</a></li>
+            <li class="navDropdownContent"><a href="arsenal.html">Meet the Arsenal</a></li>
+            <li class="navDropdownContent"><a href="guide.html">Guide</a></li>
+            <li class="navDropdownContent"><a href="download.html">Download Game</a></li>
         </ul>
     </nav>
     <header>
         <h1>Meet the Contestants</h1>
     </header>
-    <main class="gridlayout">
+    <main class="gridlayout largeDeviceThreeColumns">
         <section>
             <h2>The Normal Enemy</h2>
             <p>These creatures are found in mass in Opela Arena trying to overwhelm the opponent. With their quick speeds and attacks it's important to keep a safe distance from you and their arms.</p>
@@ -51,7 +52,10 @@
         </section>
     </main>
     <footer>
-        <a href="https://ntigymnasiet.se/" target="_blank"><img src="https://ntigymnasiet.se/wp-content/uploads/2023/02/logotype-vit.svg" alt="Logo of NTI gymnasium" id="nti"></a>
+        <a href="https://ntigymnasiet.se/"><img id="nti" alt="picture of nti logo" src="https://ntigymnasiet.se/wp-content/uploads/2023/02/logotype-vit.svg"></a>
+        <p>
+            <a property="dct:title" rel="cc:attributionURL" href="https://marcusschool.github.io/A-Wizards-Glory-Website/">Pictures & Screenshots of A Wizard's Glory</a> by <span property="cc:attributionName">Marcus Sörberg</span> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a>
+        </p>
     </footer>
 </body>
 </html>
