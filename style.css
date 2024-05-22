@@ -56,7 +56,7 @@ nav li a:hover {
     display: block;
 }
 
-@media only screen and (max-width: 775px) {
+@media only screen and (max-width: 800px) {
     nav li {
         float: none;
     }
@@ -136,6 +136,10 @@ footer {
         margin-left: 0;
         margin-right: 0;
     }
+}
+
+#games iframe {
+    background-color: #665749;
 }
 
 #highscore {
